@@ -1,0 +1,94 @@
+/* styles.css */
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
+
+:root {
+	--accent-1: #0f0f0f;
+	--accent-2: #f3f3f3;
+	--text-secondary: var(var(--accent-2));
+	--text-primary: var(--accent-1);
+
+	/* breakpoints */
+	--sm: 640px;
+	--md: 768px;
+	--lg: 1024px;
+}
+
+body {
+	/* font-family: ; */
+	/* set later */
+}
+
+/*---- NAVIGATION ---*/
+.brand {
+	margin-top: -0.5rem;
+}
+
+@media (min-width: 768px) {
+	.animate {
+		animation-duration: 0.3s;
+		-webkit-animation-duration: 0.3s;
+		animation-fill-mode: both;
+		-webkit-animation-fill-mode: both;
+	}
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0rem);
+		opacity: 1;
+	}
+
+	0% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes slideIn {
+	0% {
+		-webkit-transform: transform;
+		-webkit-opacity: 0;
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		-webkit-opacity: 1;
+	}
+
+	0% {
+		-webkit-transform: translateY(1rem);
+		-webkit-opacity: 0;
+	}
+}
+
+.slideIn {
+	-webkit-animation-name: slideIn;
+	animation-name: slideIn;
+}
+
+/* --------login----- */
+
+.form-container {
+	max-width: 400px;
+}
+.form-container-2 {
+	max-width: 470px;
+}
+
+/* --------cars----- */
+@media (min-width: 1280px) {
+	.row-element-car {
+		max-width: 450px;
+	}
+}
+@media (min-width: 640px) {
+	.card-image {
+		width: 316px;
+		height: 211px;
+	}
+}
